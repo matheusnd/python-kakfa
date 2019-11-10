@@ -4,8 +4,8 @@ import threading
 
 
 def get_consumer_kafka():
-    consumer = KafkaConsumer('python_kafka_topic',
-                             bootstrap_servers=['localhost:9092'],
+    consumer = KafkaConsumer('python_twiter',
+                             bootstrap_servers=['localhost:29092'],
                              auto_offset_reset='earliest',
                              enable_auto_commit=True,
                              group_id='python-kakfa-group',
